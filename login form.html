@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100%;
+            margin:0;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .card{
+            width:400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow:0 2px 4px rgba(0,0,0,0.2);
+            height: 400px;
+        }
+        .Diprella{
+            color: #0e8777;
+            text-align: center;
+
+        }
+        .pics{
+            text-align: center;
+        }
+        .pics img{
+            height: 40px;
+        }
+        .para{
+            text-align: center;
+            color:#a09f9f ;
+        }
+
+        .emailpass{
+            text-align: center;
+            width: 100%;
+        }
+
+        .emailpass input{
+            width: 60%;
+            height: 35px;
+            background-color: #d7edea;
+            border:none ;
+            border-radius: 2px;
+        }
+        .forgot{
+            text-align: center;
+            margin-top: 7%;
+            color: black;
+        }
+        button{
+            width: 30%;
+             border-radius: 20px; 
+             height: 30px;
+             margin-top: 6%;
+             background-color: #1eb09d;
+             color: white;
+        }
+.logins{
+    display: flex;
+    justify-content: center;
+}
+
+
+    </style>
+</head>
+<body>  
+    <div id="QA" class="container">
+        <div id="QB" class="card">
+            <div id="QC" class="Diprella">
+                <h1>Sign in to Diprella</h1>
+            </div>
+            <div id="QD" class="pics">
+                <a href="https://www.facebook.com/">
+                    <img src="images/icons8-facebook-96.png" alt="">
+
+                </a>
+                <a href="https://www.google.com/">
+                    <img src="images/icons8-google-plus-96.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/login">
+                    <img src="images/icons8-linked-in-96.png" alt="">
+                </a>    
+
+            </div>
+            <div id="QE" class="para">
+                <p>or use your email account</p>
+            </div>
+            
+                <div id="QF" class="emailpass">
+                    <input id="email" type="text" placeholder="email"><br><br>
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+                <div id="QG" class="forgot">
+                    <a onclick="Create()" href="#" id="QH" class="forgot">Forgot your password?</a>
+                </div>
+                <div id="QI" class="logins">
+                    <button onclick="save()" id="QJ" class="login">Sign in</button>          
+                </div>
+            
+
+            
+        </div>
+    </div>
+
+</body>
+<script>
+    var email = document.getElementById('email');
+
+    
+    var pass = document.getElementById('password').value;
+    
+    email.addEventListener('input',function(event){
+        var userEmail = event.target.value
+        console.log(userEmail)
+    })
+
+    password.addEventListener('input',function(event){var userpassword = event.target.value
+    console.log(userpassword)
+    })
+</script>
+</html>
